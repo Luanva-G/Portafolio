@@ -1,35 +1,58 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import React from 'react'
 import './App.css'
 
-function App() {
-  const [count, setCount] = useState(0)
+import ProjectCard from '../components/ProjectCard';
 
-  return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+interface Project {
+  id: number;
+  title: string;
+  description: string;
+  techStack: string[];
+  imageUrl?: string;
+  repoUrl?: string;
+  demoUrl?: string;
 }
 
-export default App
+const myProjects: Project[] = [
+  {
+    id: 1,
+    title: "Reproductor de Música",
+    description: "Aplicación de escritorio con interfaz gráfica y un motor de audio de alto rendimiento.",
+    techStack: ["Python", "C++", "PySide6", "miniaudio"],
+    // imageUrl: '/assets/music-player.png',
+    // repoUrl: 'https://github.com/tuusuario/music-player',
+  },
+  {
+    id: 2,
+    title: "Convertidor a PDF",
+    description: "Aplicación web para transformar imágenes a formato PDF de forma rápida y eficiente.",
+    techStack: ["Next.js", "Node.js", "Tailwind CSS"],
+    // demoUrl: 'https://tu-demo.vercel.app',
+    // repoUrl: 'https://github.com/tuusuario/pdf-converter',
+  },
+];
+
+export const ProjectsSection: React.FC = () => {
+  return (
+    <section id="proyectos" className="container mt-5">
+      <h2 className="mb-4">Mis Proyectos</h2>
+
+      <div className="row">
+        {myProjects.map((project) => (
+          <div key={project.id} className="col-md-4 mb-4">
+            <ProjectCard
+              title={project.title}
+              description={project.description}
+              techStack={project.techStack}
+              imageUrl={project.imageUrl}
+              repoUrl={project.repoUrl}
+              demoUrl={project.demoUrl}
+            />
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+};
+
+export default ProjectsSection;
