@@ -24,8 +24,8 @@ const Footer: React.FC = () => {
           </div>
         </div>
         <div className="copyright-wrapper wow fadeInUp" data-wow-delay=".2s">
-          <p>Design and Developed by<a href="https://uideck.com" rel="nofollow" target="_blank" >UIdeck</a>
-           Built-with <a href="https://uideck.com" rel="nofollow" target="_blank" >Lindy UI Kit</a>
+          <p>Design and Developed by<a href="https://uideck.com" target="_blank" rel="noreferrer">UIdeck</a>
+           Built-with <a href="https://uideck.com"  target="_blank" rel="noreferrer">Lindy UI Kit</a>
            </p>
         </div>
       </div>
