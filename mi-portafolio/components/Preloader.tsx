@@ -10,7 +10,7 @@ const Preloader= (): ReactElement => {
 
     const timer = setTimeout(() => { // 2. Definimos el timer. NodeJS.Timeout o number según el entorno
       setIsloading(false);
-    }, 2000);
+    }, 3000);
 
        // 3. Limpieza: evita errores si el componente se desmonta antes de los 2s
     return () => clearTimeout(timer);
@@ -18,7 +18,7 @@ const Preloader= (): ReactElement => {
 
   if(isloading) {
     return (
-      <div className="vh-100 d-flex flex-column justify-content-center align-items-center bg-white">
+      <div className="vh-100 d-flex flex-column justify-content-center align-items-center bg-white contenedor-del-preloader">
         <div className="spinner-border text-primary" role="status" style={{ width: '3.5rem', height: '3.5rem' }}>
           <span className="visually-hidden">Cargando...</span>
         </div>

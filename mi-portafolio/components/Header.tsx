@@ -28,7 +28,7 @@ const Header: React.FC = () => {
                 
                 {/* Logo */}
                 <a className="navbar-brand" href="#home">
-                  <img src="assets/img/logo/logo.svg" alt="Logo" />
+                  <img src="../src/assets/img/logo/Killua.svg" alt="Logo" />
                 </a>
                 
                 {/* Botón Toggler nativo de Bootstrap */}

@@ -30,7 +30,7 @@ const AboutSection: React.FC = () => {
           </div>
           <div className="col-xl-7 col-lg-6">
             <div className="about-image text-lg-right wow fadeInUp" data-wow-delay=".5s">
-              <img src="assets/img/about/about-4/about-img.svg" alt="About Illustration" />
+              <img src="../src/assets/img/about/about-4/about-img.svg" alt="About Illustration" />
             </div>
           </div>
         </div>

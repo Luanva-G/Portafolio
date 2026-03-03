@@ -66,3 +66,22 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+
+/* Reseteamos el html y el body para que tomen toda la pantalla real */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden; /* Evita scrolls horizontales indeseados */
+  background-color: #ffffff; /* O el color de fondo de tu plantilla */
+}
+
+/* Obligamos al contenedor principal de React a estirarse al máximo */
+#root {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}

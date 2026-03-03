@@ -7,7 +7,7 @@ const ClientsLogoSection: React.FC = () => {
         <div className="row">
           <div className="col-lg-12">
             <div className="client-logo wow fadeInUp" data-wow-delay=".2s">
-              <img src="assets/img/clients/brands.svg" alt="Client Brands" className="w-100" />
+              <img src="../src/assets/img/clients/brands.svg" alt="Client Brands" className="w-100" />
             </div>
           </div>
         </div>

@@ -19,7 +19,7 @@ const HeroSection: React.FC = () => {
           </div>
           <div className="col-lg-6 align-self-end">
             <div className="hero-image wow fadeInUp" data-wow-delay=".5s">
-              <img src="assets/img/hero/hero-5/hero-img.svg" alt="Hero Illustration" />
+              <img src="../src/assets/img/hero/hero-5/hero-img.svg" alt="Hero Illustration" />
             </div>
           </div>
         </div>

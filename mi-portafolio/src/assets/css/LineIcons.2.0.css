@@ -2210,3 +2210,16 @@ Author: lineicons.com
   content: "\ec03";
 }
 
+.contenedor-del-preloader {
+  position: fixed; /* Lo fija a la pantalla ignorando el resto del contenido */
+  top: 0;
+  left: 0;
+  width: 100vw; /* 100% del ancho de la pantalla */
+  height: 100vh; /* 100% del alto de la pantalla */
+  background-color: #ffffff; /* Fondo blanco para tapar lo de atrás */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centra verticalmente */
+  align-items: center; /* Centra horizontalmente */
+  z-index: 9999; /* Asegura que esté por encima de TODO */
+}
