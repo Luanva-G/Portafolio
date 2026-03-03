@@ -9,13 +9,32 @@ import ContactSection from '../components/ContactSection';
 import ClientsLogoSection from '../components/ClientsLogoSection';
 import Footer from '../components/Footer';
 import ScrollTop from '../components/ScrollTop';
+import React, { useState, useEffect } from 'react';
 
 
 const App: React.FC = () => {
+
+  const [loading, setLoading] = useState<boolean>(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 5000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  // 1. Mientras loading sea true, solo mostramos el Preloader
+  if (loading) {
+    return <Preloader />;
+  }
+
+
   return (
     <>
 
 <Preloader />
+
       
       <section id="home" className="hero-section-wrapper-5">
         <Header />
