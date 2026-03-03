@@ -1,58 +1,36 @@
-import React from 'react'
-import './App.css'
+import react from 'react';
+import Header from '../components/Header';
+import HeroSection from '../components/HeroSection';
+import Preloader from '../components/Preloader';
+import FeaturesSection from '../components/FeaturesSection';
+import AboutSection from '../components/AboutSection';
+import PricingSection from '../components/PricingSection';
+import ContactSection from '../components/ContactSection';
+import ClientsLogoSection from '../components/ClientsLogoSection';
+import Footer from '../components/Footer';
+import ScrollTop from '../components/ScrollTop';
 
-import ProjectCard from '../components/ProjectCard';
 
-interface Project {
-  id: number;
-  title: string;
-  description: string;
-  techStack: string[];
-  imageUrl?: string;
-  repoUrl?: string;
-  demoUrl?: string;
+const App: React.FC = () => {
+  return (
+    <>
+
+<Preloader />
+      
+      <section id="home" className="hero-section-wrapper-5">
+        <Header />
+        <HeroSection />
+      </section>
+
+      <FeaturesSection />
+      <AboutSection />
+      <PricingSection />
+      <ContactSection />
+      <ClientsLogoSection />
+      <Footer />
+      <ScrollTop />
+    </>
+  );
 }
 
-const myProjects: Project[] = [
-  {
-    id: 1,
-    title: "Reproductor de Música",
-    description: "Aplicación de escritorio con interfaz gráfica y un motor de audio de alto rendimiento.",
-    techStack: ["Python", "C++", "PySide6", "miniaudio"],
-    // imageUrl: '/assets/music-player.png',
-    // repoUrl: 'https://github.com/tuusuario/music-player',
-  },
-  {
-    id: 2,
-    title: "Convertidor a PDF",
-    description: "Aplicación web para transformar imágenes a formato PDF de forma rápida y eficiente.",
-    techStack: ["Next.js", "Node.js", "Tailwind CSS"],
-    // demoUrl: 'https://tu-demo.vercel.app',
-    // repoUrl: 'https://github.com/tuusuario/pdf-converter',
-  },
-];
-
-export const ProjectsSection: React.FC = () => {
-  return (
-    <section id="proyectos" className="container mt-5">
-      <h2 className="mb-4">Mis Proyectos</h2>
-
-      <div className="row">
-        {myProjects.map((project) => (
-          <div key={project.id} className="col-md-4 mb-4">
-            <ProjectCard
-              title={project.title}
-              description={project.description}
-              techStack={project.techStack}
-              imageUrl={project.imageUrl}
-              repoUrl={project.repoUrl}
-              demoUrl={project.demoUrl}
-            />
-          </div>
-        ))}
-      </div>
-    </section>
-  );
-};
-
-export default ProjectsSection;
+export default App;
