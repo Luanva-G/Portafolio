@@ -1,4 +1,4 @@
-import react from 'react';
+// import react from 'react';
 import Header from '../components/Header';
 import HeroSection from '../components/HeroSection';
 import Preloader from '../components/Preloader';
