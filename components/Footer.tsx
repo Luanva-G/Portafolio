@@ -1,4 +1,5 @@
 // import react from 'react';
+import footer from '../src/assets/img/logo/Footer.svg';
 
 const Footer: React.FC = () => {
     return (
@@ -9,7 +10,7 @@ const Footer: React.FC = () => {
             <div className="col-xl-3 col-lg-4 col-md-6">
               <div className="footer-widget wow fadeInUp" data-wow-delay=".2s">
                 <div className="logo">
-                  <a href="#0"> <img src="../src/assets/img/logo/Footer.svg" alt="Footer Logo" /> </a>
+                  <a href="#0"> <img src={footer} alt="Footer Logo" /> </a>
                 </div>
                 <p className="desc">Si tienes alguna propuesta o simplemente quieres saludar, te invito a conectar conmigo en mis redes sociales.</p>
                 <ul className="socials">
