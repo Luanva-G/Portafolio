@@ -4,7 +4,7 @@ import killuaImage from '../src/assets/img/about/about-4/killua.jpg';
 const HeroSection: React.FC = () => {
   return (
     <div 
-      className="hero-section hero-style-5 img-bg p-10"
+      className="hero-section hero-style-5 img-bg p-5"
       style={{ backgroundImage: "url('/assets/img/hero/hero-5/hero-bg.svg')" }}
     >
       <div className="container">

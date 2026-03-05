@@ -10,9 +10,8 @@ import './assets/css/tiny-slider.css';
 import './assets/css/lindy-uikit.css';
 
 createRoot(document.getElementById('root')!).render(
-  <StrictMode>
-    <main>
-       <App />
-    </main>
-  </StrictMode>,
+
+    <StrictMode>
+    <App />
+  </StrictMode>
 )

@@ -33,8 +33,6 @@ const App: React.FC = () => {
 
   return (
     <>
-      
-      <Preloader />
     <Navbar />    
       
       <section id="home" className="hero-section-wrapper-5">

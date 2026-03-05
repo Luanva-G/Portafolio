@@ -22,7 +22,7 @@ const AboutSection: React.FC = () => {
 
               <ul>
                 <li>
-                  Experiencia con Java, TypeScript y Python.
+                  Manejo Java, TypeScript y Python.
                 </li>
                 <li>
                   Aprendiendo Cloud y desarrollo backend con Node.js y MongoDB.
