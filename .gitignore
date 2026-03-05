@@ -1,0 +1,10 @@
+# Dependencias
+node_modules
+.env
+.env.local
+
+# Basura de sistema y compilación
+dist/
+.DS_Store
+src/**/.DS_Store
+**/ .DS_Store
