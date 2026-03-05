@@ -1,6 +1,6 @@
 import React from "react";
-import ImgToPdf from "../assets/img/projects/ImageToPdf.png";
-import Portafolio from "../assets/img/projects/fonod.png";
+import ImgToPdf from "../src/assets/img/projects/ImageToPdf.png";
+import Portafolio from "../src/assets/img/projects/fonod.png";
 
 type Proyecto = {
   titulo: string;

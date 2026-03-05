@@ -1,5 +1,5 @@
 import React from 'react';
-import killuaImage from '../assets/img/about/about-4/killua.jpg';
+import killuaImage from '../src/assets/img/about/about-4/killua.jpg';
 
 const HeroSection: React.FC = () => {
   return (
