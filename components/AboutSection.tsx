@@ -1,4 +1,5 @@
 import React from 'react';
+import aversisi from '../src/assets/img/about/about-4/aversisi.jpg';
 
 const AboutSection: React.FC = () => {
   return (
@@ -40,7 +41,7 @@ const AboutSection: React.FC = () => {
           <div className="col-xl-7 col-lg-6">
             <div className="about-image text-lg-right">
               <img 
-                src="../src/assets/img/about/about-4/aversisi.jpg" 
+                src={aversisi} 
                 alt="Otro Killua " 
               />
             </div>

@@ -1,4 +1,6 @@
 import React from "react";
+import ImgToPdf from "../assets/img/projects/ImageToPdf.png";
+import Portafolio from "../assets/img/projects/fonod.png";
 
 type Proyecto = {
   titulo: string;
@@ -11,13 +13,13 @@ const proyectos: Proyecto[] = [
   {
     titulo: "Convertidor de Imagenes a PDF",
     descripcion: "Hecho en JS con pdf-lib, permite convertir imágenes a PDF de forma sencilla.",
-    imagen: "../src/assets/img/projects/ImageToPdf.png",
+    imagen: ImgToPdf,
     link: "https://img-to-pdf-converter-two.vercel.app"
   },
   {
     titulo: "Portafolio React",
     descripcion: "Portafolio personal con React y TypeScript.",
-    imagen: "../src/assets/img/projects/fonod.png",
+    imagen: Portafolio,
     link: "/#"
   },
   

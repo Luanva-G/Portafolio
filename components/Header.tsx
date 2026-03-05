@@ -1,4 +1,5 @@
 import React from 'react';
+import headerLogo from '../src/assets/img/logo/Killua.svg';
 
 // Interfaz para tipar los enlaces de navegación
 interface NavLink {
@@ -28,7 +29,7 @@ const Header: React.FC = () => {
                 
                 {/* Logo */}
                 <a className="navbar-brand" href="#home">
-                  <img src="../src/assets/img/logo/Killua.svg" alt="Logo" />
+                  <img src={headerLogo} alt="Logo" />
                 </a>
                 
                 {/* Botón Toggler nativo de Bootstrap */}

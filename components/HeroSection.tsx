@@ -1,4 +1,5 @@
 import React from 'react';
+import killuaImage from '../assets/img/about/about-4/killua.jpg';
 
 const HeroSection: React.FC = () => {
   return (
@@ -29,7 +30,7 @@ const HeroSection: React.FC = () => {
           <div className="col-lg-6 align-self-end">
             <div className="hero-image">
               <img 
-                src="../src/assets/img/about/about-4/killua.jpg" 
+                src={killuaImage} 
                 alt="Ilustración desarrollador" 
               />
             </div>
