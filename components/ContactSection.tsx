@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState} from 'react';
 import emailjs, { EmailJSResponseStatus } from '@emailjs/browser';
 
 const ContactSection: React.FC = () => {
