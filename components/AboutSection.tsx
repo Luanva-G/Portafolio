@@ -13,7 +13,7 @@ const AboutSection: React.FC = () => {
                   Construyendo sistemas sólidos y escalables
                 </h3>
                 <p>
-                  Soy estudiante de Ingeniería en Software enfocado en desarrollo
+                  Soy estudiante de Ingeniería de Sistemas enfocado en desarrollo
                   backend y arquitectura en la nube. Me interesa entender cómo
                   funcionan los sistemas por dentro y crear soluciones eficientes,
                   claras y mantenibles.
