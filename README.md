@@ -1,73 +1,96 @@
-# React + TypeScript + Vite
+# 💼 Portafolio Web
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Un sitio web moderno y responsivo showcasing proyectos profesionales, servicios y contacto. Construido con React, TypeScript y Vite para máximo rendimiento.
 
-Currently, two official plugins are available:
+## ✨ Características
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Diseño Responsivo** - Totalmente adaptado para dispositivos móviles, tablets y desktops
+- **Animaciones Suaves** - Efectos visuales atractivos con WOW.js
+- **Galería de Proyectos** - Showcase interactivo de trabajos anteriores
+- **Sección de Precios** - Presentación clara de servicios y tarifas
+- **Formulario de Contacto** - Comunicación directa con clientes potenciales
+- **Optimizado para SEO** - Estructura semántica y meta tags
+- **Scroll Suave** - Navegación intuitiva entre secciones
+- **TypeScript** - Code type-safe para mejor calidad
 
-## React Compiler
+## 🛠️ Tecnologías
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Frontend Framework**: React 18
+- **Lenguaje**: TypeScript
+- **Build Tool**: Vite
+- **Estilos**: CSS personalizado + Bootstrap 5
+- **Animaciones**: WOW.js, GLightbox, Tiny Slider
+- **Linting**: ESLint
 
-## Expanding the ESLint configuration
+## 📦 Requisitos Previos
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- Node.js (v16 o superior)
+- npm o yarn
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🚀 Instalación
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+1. **Clonar el repositorio**
+```bash
+git clone https://github.com/tu-usuario/portafolio.git
+cd portafolio
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+2. **Instalar dependencias**
+```bash
+npm install
 ```
+
+3. **Ejecutar servidor de desarrollo**
+```bash
+npm run dev
+```
+
+El sitio estará disponible en `http://localhost:5173`
+
+## 📂 Estructura del Proyecto
+
+```
+src/
+├── components/          # Componentes React reutilizables
+├── assets/             # Imágenes, fuentes y estilos
+│   ├── img/           # Imágenes del sitio
+│   ├── css/           # Hojas de estilos
+│   └── js/            # Scripts externos
+├── App.tsx            # Componente principal
+├── main.tsx           # Punto de entrada
+└── index.css          # Estilos globales
+```
+
+### Componentes Principales
+
+- **Navbar** - Barra de navegación con menú responsivo
+- **Hero/HeroSection** - Sección de bienvenida
+- **AboutSection** - Información personal/profesional
+- **Projects** - Galería de proyectos
+- **PricingSection** - Tabla de precios/servicios
+- **ContactSection** - Formulario de contacto
+- **ClientsLogoSection** - Logos de clientes
+- **Footer** - Pie de página con links
+
+## 🏗️ Scripts Disponibles
+
+- `npm run dev` - Inicia servidor de desarrollo
+- `npm run build` - Construye para producción
+- `npm run preview` - Previsualiza build de producción
+- `npm run lint` - Ejecuta ESLint
+
+## 🎨 Personalización
+
+Modifica los componentes en `/components` para adaptarlos a tus necesidades. Los estilos se encuentran en `/src/assets/css/`.
+
+## 📝 Licencia
+
+Este proyecto está bajo la licencia MIT. Ver archivo `LICENSE` para más detalles.
+
+## 👤 Autor
+
+Desarrollado con pasion 
+
+## 📞 Contacto
+
+¿Tienes preguntas o sugerencias? Siéntete libre de contactarme a través del formulario de contacto en el sitio web.
